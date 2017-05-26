@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popular.Popular"
+    >
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_normal_2">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_popular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_no_internet_2"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_signal_wifi_off_black_24dp"
+            android:id="@+id/gambar_error"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/gambar_error"
+            android:text="No Internet Connection"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:id="@+id/text_error_2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_error_2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Try Again"
+            android:textIsSelectable="true"
+            android:id="@+id/button_error_2"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
